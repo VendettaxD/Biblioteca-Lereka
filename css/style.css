@@ -55,9 +55,20 @@ nav {
     margin-left: 650px;
   }
 
+  .fa-star {
+    position: absolute;
+    margin-left: -25px;
+  }
+
+  .fa-id-badge {
+    position: absolute;
+    margin-left: -23px;
+  }
+
   .fa-map-pin {
     position: absolute;
-    margin-left: -20px;
+    margin-left: -63px;
+    margin-top: 19px;
   }
 
   .input {
@@ -116,10 +127,10 @@ nav .menu-text, nav .menu-text a {
     text-align: center;
 }
 
-nav .menu-text a:hover {
+/* nav .menu-text a:hover {
     color: rgba(255,255,255,0.5);
-}
-
+} */
+/* 
 #sub-menu-holder {
     pointer-events: none;
     color: rgba(0,0,0,0.5);
@@ -138,14 +149,14 @@ nav .menu-text a:hover {
     display: block;
     height: 300px;
     width: calc(var(--menu-width) * 1.5);
-}
+} */
 
 #sub-menu-container {
     position: absolute;
     z-index: -1;
     min-width: 100%;
     top: 2.5em;
-    width: 100%;
+    width: 1%;
 }
 
 nav .menu-item:hover ~ #sub-menu-container #sub-menu-holder {
@@ -183,7 +194,7 @@ nav .menu-item:nth-of-type(4):hover ~ #sub-menu-container #sub-menu-holder {
 .menu-item .sub-menu {
     position: absolute;
     top: 7em;
-    color: rgba(0,0,0,0.5);
+    color: rgba(0, 0, 0, 0);
     border-radius: 10px;
     min-width: 27.5em;
     pointer-events: none;
@@ -223,7 +234,7 @@ nav .menu-item:nth-of-type(4):hover ~ #sub-menu-container #sub-menu-holder {
     pointer-events: none;
     bottom: -5em;
     left: calc(50% - 10px);
-    border-color: transparent transparent white transparent;
+    border-color: transparent transparent rgba(255, 255, 255, 0) transparent;
     border-width: 10px;
     border-style: solid;
 }
@@ -256,7 +267,7 @@ nav .menu-item:nth-of-type(4):hover ~ #sub-menu-container #sub-menu-holder {
 /* Menu specific */
 .menu-item .title {
     font-weight: 500;
-    color: rgb(44 70 86);
+    color: rgba(44, 70, 86, 0);
     margin: 0 0 0.25em 0;
 }
 
@@ -270,11 +281,11 @@ nav .menu-item:nth-of-type(4):hover ~ #sub-menu-container #sub-menu-holder {
 .menu-item .icon-box.flat {height: 1.5em;margin-bottom: 0.5em;}
 .menu-item .icon, .menu-item .text {
     float: left;
-    color: #9ea9af;
+    color: #9ea9af00;
 }
 
 .menu-item .icon {
-    color: rgb(44 70 86);
+    color: rgba(44, 70, 86, 0);
     font-size: 1.25em;
     margin: 0 1em 0 0;
 }
@@ -311,7 +322,7 @@ nav .menu-item:nth-of-type(4):hover ~ #sub-menu-container #sub-menu-holder {
 .icon-box.gb.c .icon i:before {background-image: linear-gradient(45deg, #7176ff 35%, #b26cea 75%);}
 .icon-box.gb.d .icon i:before {background-image: linear-gradient(45deg, #79c76f 35%, #bed09b 75%);}
 .icon-box.gb.e .icon i:before {background-image: linear-gradient(45deg, #6082ff 35%, #ff5dbe 75%);}
-.icon-box.gb.f .icon i:before {background-image: linear-gradient(45deg, #808080 35%, #bbbbbb 75%);}
+.icon-box.gb.f .icon i:before {background-image: linear-gradient(45deg, #80808000 35%rgba(187, 187, 187, 0)bb 75%);}
 
 .menu-item .icon-box:hover .text i {
     clip-path: inset(0 0 0 0);
