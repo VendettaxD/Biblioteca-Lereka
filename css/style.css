@@ -4,6 +4,11 @@
     --item-width: calc(var(--menu-width) / var(--items));
 }
 
+.sebo-logo {
+    width: 800px;
+    margin-left: 430px;
+}
+
 body {
     margin: 0;
     padding: 0;
