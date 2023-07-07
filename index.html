@@ -8,52 +8,333 @@
     <link rel="stylesheet" href="css/style.css"> 
     <script src="https://kit.fontawesome.com/b92e07698e.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
+<script src="https://unpkg.com/embla-carousel-autoplay/embla-carousel-autoplay.umd.js"></script>
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" type="text/css" />
     <title>Sebo Da Lereka - Os livros Mais Vendidos</title>
 </head>
 
 <body>
-<img id="image-logo" src="image/Logo_de_Estúdio_de_beleza_lilás_-removebg-preview.png" alt="" srcset="">
-    <div class="InputContainer">
+<!-- <img id="image-logo" src="image/Logo_de_Estúdio_de_beleza_lilás_-removebg-preview.png" alt="" srcset=""> -->
+    <!-- <div class="InputContainer">
         <input placeholder="Buscando" id="input" class="input" name="text" type="text">
         <i class="fa-solid fa-magnifying-glass"></i>  
+      </div> -->
+
+      <nav class="menu" id="menu">
+        <img id="image-logo" src="image/Logo_de_Estúdio_de_beleza_lilás_-removebg-preview.png" alt="" srcset="">
+        <div class="container container-menu-buttons">
+          <button id="btn-menu-bars" class="btn-menu-bars"><i class="fas fa-bars"></i></button>
+          <button id="btn-menu-close" class="btn-menu-close"><i class="fas fa-times"></i></button>
+        </div>
+    
+        <div class="container container-nav-links">
+          <div class="btn-departments" id="btn-departments">
+            <p>All <span>Departments</span></p>
+            <i class="fas fa-caret-down"></i>
+          </div>
+    
+          <div class="links">
+            <a href="#">Account</a>
+            <a href="#">Today's Deals</a>
+            <a href="#">Gift Cards</a>
+            <a href="#">Help</a>
+          </div>
+        </div>
+    
+        <div class="container container-grid">
+          <div class="grid" id="grid">
+            <div class="categories">
+              <button class="btn-back"><i class="fas fa-arrow-left"></i> Go Back</button>
+              <h3 class="subtitle">Categories</h3>
+    
+              <a href="#" data-category="technology-computers">Technology & Computers <i class="fas fa-angle-right"></i></a>
+              <a href="#" data-category="books">Books <i class="fas fa-angle-right"></i></a>
+              <a href="#" data-category="clothing-accessories">Clothing & Accessories <i class="fas fa-angle-right"></i></a>
+              <a href="#" data-category="home-kitchen">Home & Kitchen <i class="fas fa-angle-right"></i></a>
+              <a href="#" data-category="games-toys">Games & Toys <i class="fas fa-angle-right"></i></a>
+              <a href="#" data-category="health-beauty">Health & Beauty <i class="fas fa-angle-right"></i></a>
+              <a href="#" data-category="food-drinks">Food & Drinks <i class="fas fa-angle-right"></i></a>
+            </div>
+    
+            <div class="container-subcategories">
+              <div class="subcategory active" data-category="technology-computers">
+                <div class="subcategory-links">
+                  <button class="btn-back"><i class="fas fa-arrow-left"></i> Go Back</button>
+                  <h3 class="subtitle">Technology & Computers</h3>
+                  <a href="#">Laptops</a>
+                  <a href="#">Tablets</a>
+                  <a href="#">Desktop Computers</a>
+                  <a href="#">Screens</a>
+                  <a href="#">Components</a>
+                </div>
+                <div class="subcategory-banner">
+                  <a href="#">
+                    <img src="img/tecnologia-banner-1.png" alt="Banner">
+                  </a>
+                </div>
+                <div class="subcategory-gallery">
+                  <a href="#">
+                    <img src="img/tecnologia-galeria-1.png" alt="">
+                  </a>
+                  <a href="#">
+                    <img src="img/tecnologia-galeria-2.png" alt="">
+                  </a>
+                  <a href="#">
+                    <img src="img/tecnologia-galeria-3.png" alt="">
+                  </a>
+                  <a href="#">
+                    <img src="img/tecnologia-galeria-4.png" alt="">
+                  </a>
+                </div>
+              </div>
+    
+              <div class="subcategory" data-category="books">
+                <div class="subcategory-links">
+                  <button class="btn-back"><i class="fas fa-arrow-left"></i> Go Back</button>
+                  <h3 class="subtitle">Books</h3>
+                  <a href="#">Top Sellers</a>
+                  <a href="#">Fiction</a>
+                  <a href="#">Fantasy</a>
+                  <a href="#">Horror</a>
+                  <a href="#">Romance</a>
+                </div>
+                <div class="subcategory-banner">
+                  <a href="#">
+                    <img src="img/libros-banner-1.png" alt="Banner">
+                  </a>
+                </div>
+                <div class="subcategory-gallery">
+                  <a href="#">
+                    <img src="img/libros-galeria-1.png" alt="">
+                  </a>
+                  <a href="#">
+                    <img src="img/libros-galeria-2.png" alt="">
+                  </a>
+                  <a href="#">
+                    <img src="img/libros-galeria-3.png" alt="">
+                  </a>
+                  <a href="#">
+                    <img src="img/libros-galeria-4.png" alt="">
+                  </a>
+                </div>
+              </div>
+    
+              <div class="subcategory" data-category="clothing-accessories">
+                <div class="subcategory-links">
+                  <button class="btn-back"><i class="fas fa-arrow-left"></i> Go Back</button>
+                  <h3 class="subtitle">Clothing & Accessories </h3>
+                  <a href="#">Clothes</a>
+                  <a href="#">Shoes</a>
+                  <a href="#">Accessories</a>
+                  <a href="#">Watches</a>
+                </div>
+                <div class="subcategory-banner">
+                  <a href="#">
+                    <img src="img/ropa-banner-1.png" alt="Banner">
+                  </a>
+                </div>
+                <div class="subcategory-gallery">
+                  <a href="#">
+                    <img src="img/ropa-galeria-1.png" alt="">
+                  </a>
+                  <a href="#">
+                    <img src="img/ropa-galeria-2.png" alt="">
+                  </a>
+                  <a href="#">
+                    <img src="img/ropa-galeria-3.png" alt="">
+                  </a>
+                  <a href="#">
+                    <img src="img/ropa-galeria-4.png" alt="">
+                  </a>
+                </div>
+              </div>
+    
+              <div class="subcategory" data-category="home-kitchen">
+                <div class="subcategory-links">
+                  <button class="btn-back"><i class="fas fa-arrow-left"></i> Go Back</button>
+                  <h3 class="subtitle">Home & Kitchen</h3>
+                  <a href="#">Kitchen</a>
+                  <a href="#">Furniture</a>
+                  <a href="#">Bath</a>
+                  <a href="#">Cleaning Supplies</a>
+                  <a href="#">Bedroom</a>
+                  <a href="#">Wall Art & Decoration</a>
+                  <a href="#">Kid's Room</a>
+                  <a href="#">Lighting</a>
+                </div>
+                <div class="subcategory-banner">
+                  <a href="#">
+                    <img src="img/hogar-banner-1.png" alt="Banner">
+                  </a>
+                </div>
+                <div class="subcategory-gallery">
+                  <a href="#">
+                    <img src="img/hogar-galeria-1.png" alt="">
+                  </a>
+                  <a href="#">
+                    <img src="img/hogar-galeria-2.png" alt="">
+                  </a>
+                  <a href="#">
+                    <img src="img/hogar-galeria-3.png" alt="">
+                  </a>
+                  <a href="#">
+                    <img src="img/hogar-galeria-4.png" alt="">
+                  </a>
+                </div>
+              </div>
+    
+              <div class="subcategory" data-category="games-toys">
+                <div class="subcategory-links">
+                  <button class="btn-back"><i class="fas fa-arrow-left"></i> Go Back</button>
+                  <h3 class="subtitle">Games & Toys</h3>
+                  <a href="#">Toys</a>
+                  <a href="#">Board Games</a>
+                  <a href="#">Outdoors games</a>
+                  <a href="#">Dolls</a>
+                </div>
+                <div class="subcategory-banner">
+                  <a href="#">
+                    <img src="img/juegos-banner-1.png" alt="Banner">
+                  </a>
+                </div>
+                <div class="subcategory-gallery">
+                  <a href="#">
+                    <img src="img/juegos-galeria-1.png" alt="">
+                  </a>
+                  <a href="#">
+                    <img src="img/juegos-galeria-2.png" alt="">
+                  </a>
+                  <a href="#">
+                    <img src="img/juegos-galeria-3.png" alt="">
+                  </a>
+                  <a href="#">
+                    <img src="img/juegos-galeria-4.png" alt="">
+                  </a>
+                </div>
+              </div>
+    
+              <div class="subcategory" data-category="health-beauty">
+                <div class="subcategory-links">
+                  <button class="btn-back"><i class="fas fa-arrow-left"></i> Go Back</button>
+                  <h3 class="subtitle">Health & Beauty</h3>
+                  <a href="#">Skin care</a>
+                  <a href="#">Make up</a>
+                  <a href="#">Lotions</a>
+                  <a href="#">Shampoo</a>
+                  <a href="#">Cologne</a>
+                </div>
+                <div class="subcategory-banner">
+                  <a href="#">
+                    <img src="img/belleza-banner-1.png" alt="Banner">
+                  </a>
+                </div>
+                <div class="subcategory-gallery">
+                  <a href="#">
+                    <img src="img/belleza-galeria-1.png" alt="">
+                  </a>
+                  <a href="#">
+                    <img src="img/belleza-galeria-2.png" alt="">
+                  </a>
+                  <a href="#">
+                    <img src="img/belleza-galeria-3.png" alt="">
+                  </a>
+                  <a href="#">
+                    <img src="img/belleza-galeria-4.png" alt="">
+                  </a>
+                </div>
+              </div>
+    
+              <div class="subcategory" data-category="food-drinks">
+                <div class="subcategory-links">
+                  <button class="btn-back"><i class="fas fa-arrow-left"></i> Go Back</button>
+                  <h3 class="subtitle">Food & Drinks</h3>
+                  <a href="#">Food</a>
+                  <a href="#">Drinks</a>
+                </div>
+                <div class="subcategory-banner">
+                  <a href="#">
+                    <img src="img/comida-banner-1.png" alt="Banner">
+                  </a>
+                </div>
+                <div class="subcategory-gallery">
+                  <a href="#">
+                    <img src="img/comida-galeria-1.png" alt="">
+                  </a>
+                  <a href="#">
+                    <img src="img/comida-galeria-2.png" alt="">
+                  </a>
+                  <a href="#">
+                    <img src="img/comida-galeria-3.png" alt="">
+                  </a>
+                  <a href="#">
+                    <img src="img/comida-galeria-4.png" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    
+      <div class="embla">
+        <div class="embla__container">
+          <div class="embla__slide">
+                <img src="/image/sebo.png" alt="" srcset="">
+          </div>
+          <div class="embla__slide">
+                <img src="/image/sebo-lereka.png" alt="" srcset="">
+          </div>
+          <div class="embla__slide">
+            <img src="/image/o poder da ação.jpg" alt="" srcset="">
+          </div>
+        </div>
       </div>
 
-    <nav id="menu">
-        <div class="menu-item">
-            <div class="menu-text">
-                <a href="#">Categorias</a>
-            </div>
-            </div>
+<div class="books">
+<div id="c2" class="card">
+    <div class="card-inner">
+      <img id="gra-img" src="images/240x240_2.jpeg" alt="" srcset="">
+      <h3 id="gra-text">Graduação</h3>
+    </div>
+    <div id="c2" class="card">
+        <div class="card-inner">
+          <img id="gra-img" src="images/240x240_2.jpeg" alt="" srcset="">
+          <h3 id="gra-text">Graduação</h3>
         </div>
-        <div class="menu-item highlight">
-            <div class="menu-text">
-                <a href="#">Mais vendidos</a>
+        <div id="c2" class="card">
+            <div class="card-inner">
+              <img id="gra-img" src="images/240x240_2.jpeg" alt="" srcset="">
+              <h3 id="gra-text">Graduação</h3>
             </div>
-        </div>
-        <div class="menu-item highlight">
-            <div class="menu-text">
-                <a id="second-text" href="#">Recomendados</a>
-            </div>
-            </div>
-        </div>
-        <div class="menu-item">
-            <div class="menu-text">
-                <a href="">Ofertas</a>
-            </div>
-            </div>
-        </div>
-
-    </nav>
-    <div class="tree-types">
-    <ul>
-        <a href=""><i class="fa-solid fa-id-badge"></i>Conta</li></a>
-        <a href=""><i class="fa-solid fa-map-pin"></i><li>Endereço</li></a>
-        <a href=""><i class="fa-solid fa-star"></i><li>Favoritos</li></a>
-    </ul>
+            <div id="c2" class="card">
+                <div class="card-inner">
+                  <img id="gra-img" src="images/240x240_2.jpeg" alt="" srcset="">
+                  <h3 id="gra-text">Graduação</h3>
+                </div>
+                <div id="c2" class="card">
+                    <div class="card-inner">
+                      <img id="gra-img" src="images/240x240_2.jpeg" alt="" srcset="">
+                      <h3 id="gra-text">Graduação</h3>
+                    </div>
+                    <div id="c2" class="card">
+                        <div class="card-inner">
+                          <img id="gra-img" src="images/240x240_2.jpeg" alt="" srcset="">
+                          <h3 id="gra-text">Graduação</h3>
+                        </div>
+                    </div>
 </div>
-<img class="sebo-logo" src="/image/sebo.png" alt="">
-</body>
 
+</body>
+<script type="text/javascript">
+    var emblaNode = document.querySelector('.embla')
+    var options = { loop: false }
+  
+    var embla = EmblaCarousel(emblaNode, options)
+  </script>
+  
+<script src="https://kit.fontawesome.com/eea5dcc8ef.js" crossorigin="anonymous"></script>
+<script src="main.js"></script>
 </html>
