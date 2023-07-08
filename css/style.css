@@ -626,12 +626,23 @@ main article {
     margin: 15px 80px;
   }
 
+  .card img {
+    width: 180px;
+  }
+
   .card {
-    left: 1%;
+    width: 200px;
+    left: 1.8%;
   }
   
   .nav-ending ul {
     margin-left: 480px;
     margin-top: 67px;
   }
+
+  .links {
+    position: absolute;
+    margin-left: 713px;
+  }
+
 }
