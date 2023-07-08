@@ -620,3 +620,18 @@ main article {
     height: 100%;
   }
 } 
+
+@media screen and (max-width: 1600px) {
+  .promotions li {
+    margin: 15px 80px;
+  }
+
+  .card {
+    left: 1%;
+  }
+  
+  .nav-ending ul {
+    margin-left: 480px;
+    margin-top: 67px;
+  }
+}
